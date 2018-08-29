@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HOME=~/pt2gz
+
+$HOME/port2gal.perl | $HOME/regrasVerbos.perl $HOME/verbos23.txt
