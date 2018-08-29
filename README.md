@@ -5,7 +5,7 @@ Transliterador de português para galego (RAG-ILG)
 * Modificações feitas por Paulo Gamallo
 * Este script foi criado em 2004 e revisado recentemente para o seu uso com a codificação UTF8.
 
-## Requirementos:
+## Requerimentos:
  * Bash e Perl
 
 ## Exemplo de uso:
