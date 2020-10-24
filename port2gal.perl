@@ -439,6 +439,7 @@ while ($line = <>) {
     $line =~ s/ en  un(s?) /nun$1 /gi;
     #$line =~ s/(v(o)u|v(as)|v(a)i|v(amos)|v(ades)|v(an))  embora/march$2$3$4$5$6$7/gi;
 
+    $line =~ s/ através /a través /gi;
 
     #trocas de grafias especiais
     $line =~ y/çàãõâêôûjÇÀÃÕÂÊÔÛJ/záaoáéóúxZÁAOÁÉÓÚX/;
