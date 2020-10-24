@@ -10,6 +10,7 @@ use strict;
 
 binmode STDIN, ':utf8';
 binmode STDOUT, ':utf8';
+binmode STDERR, ':utf8';
 use utf8;
 
 
@@ -114,8 +115,8 @@ hierarquia(s?) xerarquia
 Hierarquia(s?) Xerarquia
 hierárquico(s?) xerárquico
 Hierárquico(s?) Xerárquico
-mas pero
-Mas Pero
+mas mais
+Mas Mais
 ([mM])uçulmano(s?) usulmán
 ([pP])ont(o?|os?|u?)- unt
 ([pP])ropriedade(s?) ropiedade
@@ -129,6 +130,8 @@ qualquer calquera
 quaisquer calquera
 Qualquer Calquera
 Quaisquer Calquera
+Quase Case
+quase case
 sob baixo
 Sob Baixo
 ([tT])rês res
@@ -147,12 +150,15 @@ Sob Baixo
 ([eEoO])xig([ei)- six
 enquanto mentres
 Enquanto Mentres
+([cC]re)sc- c
+([nN]a)sc- c
 ([cC]orr|[eE]l)e([gj])- i
 ([cC]orri|[eE]li)ge- gi
 ([cC]orri|[eE]li)gê- gí
 ([cC]on|[dD]i)vir([gj])- ver
 ([cC]onver|[dD]iver)gi- ge
 ([cC]onver|[dD]iver)gí- g
+([cC]r)i(ação|ações) e
 ([dD])ormi- urmi
 ([dD])ormi urmi
 ([cC]|[eE]nc|[dD]esc)obri- ubri
@@ -193,9 +199,9 @@ Enquanto Mentres
 ([hH])á((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ai
 ([hH])ás((?:-m|-lh|-t|-ch|-v|-n|-s)?([eoa]?(s?))) as
 ([hH])á-l([oa](s?)) a-l
-((?:[pP]|[aA]nte|[dE]e|[dD]ecom|[iI]dis|[pP]rop|[pP]os|[sS]uperp|[sS]up))ôs((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) uxo
-((?:[pP]|[aA]nte|[dE]e|[dD]ecom|[iI]dis|[pP]rop|[pP]os|[sS]uperp|[sS]up))us((?:este|emos|eram|era(s?)|éramos|esse(s?)|éssemos|essem|er|eres|erdes|erem|éreis|ésseis)?)((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ux
-((?:[pP]|[aA]nte|[dE]e|[dD]ecom|[iI]dis|[pP]rop|[pP]os|[sS]uperp|[sS]up))ux uxem
+((?:[pP]|[aA]ntep|[dD]ep|[dD]ecomp|[Dd]isp|[pP]rop|[Dd]ep|[sS]uperp|[sS]up))ôs((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) uxo
+((?:[pP]|[aA]ntep|[dD]ep|[dD]ecomp|[Dd]isp|[pP]rop|[Dd]ep|[sS]uperp|[sS]up))us((?:este|emos|eram|era(s?)|éramos|esse(s?)|éssemos|essem|er|eres|erdes|erem|éreis|ésseis)?)((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ux
+((?:[pP]|[aA]ntep|[dD]ep|[dD]ecomp|[Dd]isp|[pP]rop|[Dd]ep|[sS]uperp|[sS]up))ux uxem
 ([pP])erc((?:o|a|as|amos|am|ais)?)((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) erd
 ((?:[eE]s|[cC]on|[dD]e|[mM]an|[oO]b)?)[tT]êm((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) teñen
 ([vV])êm((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) eñen
@@ -405,7 +411,7 @@ while ($line = <>) {
     my $i;
     for ($i=0;$i<$#l;$i+=2) {
       my ($a,$b) = ($l[$i],$l[$i+1]);
-      #print STDERR "$a $b\n";
+     # print STDERR "$a $b\n";
      #$a =~ s/^([^\?-])/(\\W)$1/;
      #$a =~ s/([^\?-])$/$1(\\W)/;
       $a =~ s/^([^\?-])/$NaoChar$1/;
@@ -421,7 +427,7 @@ while ($line = <>) {
 
       #print STDERR "$line\n";
     }
-
+    
     #trocas de mais duma palavra (contracções prep+art e outros...)
     $line =~ s/ con  a(s?) /coa$1 /gi;
     $line =~ s/ con  o(s?) /co$1 /gi;
