@@ -53,7 +53,6 @@ Adicion(a|[ms]) Engade
 adiciona(a|[ms]) engade
 apresent- present
 Apresent- Present
-apresent- present
 ([aA])rrast([aáãeéeíoóuú])- rrastr 
 ([aA])ssim sí
 ([oO])bjet- bject
@@ -437,7 +436,8 @@ while ($line = <>) {
     $line =~ s/ de  un(s?) /dun$1 /gi;
     $line =~ s/ en  unha(s?) /nunha$1 /gi;
     $line =~ s/ en  un(s?) /nun$1 /gi;
-    #$line =~ s/(v(o)u|v(as)|v(a)i|v(amos)|v(ades)|v(an))  embora/march$2$3$4$5$6$7/gi;
+  #  $line =~ s/(v(o)u|v(as)|v(a)i|v(amos)|v(ades)|v(an))  embora/march$2$3$4$5$6$7/gi;
+    
 
     $line =~ s/ através /a través /gi;
 
