@@ -444,7 +444,7 @@ while ($line = <>) {
 
     $line =~ s/ através /a través /gi;
     #print STDERR "LINE: #$line#\n";
-    $line =~ s/ (de|polo)[ ]+fato /$1 facto /gi;
+    $line =~ s/ (de|polo)[ ]+fato /$1 feito /gi;
 
     #trocas de grafias especiais
     $line =~ y/çàãõâêôûjÇÀÃÕÂÊÔÛJ/záaoáéóúxZÁAOÁÉÓÚX/;
