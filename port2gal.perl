@@ -40,6 +40,9 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 
 
  my @l = qw(
+(f)acto(s?) eito
+(a)tor(e?s?) ctor
+(a)tri(z)(e?s?) ctri
 ([sS])im i
 ([aA])té ta
 ([aA])li lí
@@ -440,6 +443,8 @@ while ($line = <>) {
     
 
     $line =~ s/ através /a través /gi;
+    #print STDERR "LINE: #$line#\n";
+    $line =~ s/ (de|polo)[ ]+fato /$1 facto /gi;
 
     #trocas de grafias especiais
     $line =~ y/çàãõâêôûjÇÀÃÕÂÊÔÛJ/záaoáéóúxZÁAOÁÉÓÚX/;
