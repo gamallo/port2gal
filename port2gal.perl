@@ -40,6 +40,7 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 
 
  my @l = qw(
+([Dd])ado(s?) ato
 ([eE])uropeu(s?) uropeo
 ([nN])ível ivel
 ([nN])íveis iveis
