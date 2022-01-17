@@ -40,10 +40,9 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 
 
  my @l = qw(
-([Dd])ado(s?) ato
 ([eE])uropeu(s?) uropeo
-([nN])ível ivel
-([nN])íveis iveis
+((?:[dD]es)?)([nN])ível ivel
+((?:[dD]es)?)([nN])íveis iveis
 (f)acto(s?) eito
 (a)tor(e?s?) ctor
 (a)tri(z)(e?s?) ctri
@@ -447,8 +446,12 @@ while ($line = <>) {
     
 
     $line =~ s/ através /a través /gi;
-    #print STDERR "LINE: #$line#\n";
     $line =~ s/ (de|polo)[ ]+fato /$1 feito /gi;
+    
+    $line =~ s/ (o|um|algum|este|esse|aquel)[ ]+([$w]+)?[ ]+(da)do /$1 $2 $3to /gi;
+    $line =~ s/ (os|uns|alguns|estes|esses|aqueles)[ ]+([$w]+)?[ ]+(da)dos /$1 $2 $3tos /gi;
+    $line =~ s/ (d|n|pol)(o|um|algum|este|esse|aquel)[ ]+([$w]+)?[ ]+(da)do /$1$2 $3 $4to /gi;
+    $line =~ s/ (d|n|pol)(os|uns|alguns|estes|esses|aqueles)[ ]+([$w]+)?[ ]+(da)dos /$1$2 $3 $4tos /gi;
 
     #trocas de grafias especiais
     $line =~ y/çàãõâêôûjÇÀÃÕÂÊÔÛJ/záaoáéóúxZÁAOÁÉÓÚX/;
