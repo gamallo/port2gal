@@ -393,7 +393,7 @@ pós-- post
 my $line;
 while ($line = <>) {
 
-    chop $line;
+    chomp $line;
     $line = " $line ";
     $line =~ s/ /  /g;
     $line =~ s/\. / \. /g;
@@ -409,8 +409,6 @@ while ($line = <>) {
     $line =~ s/\"/ \" /g;
     
     #print STDERR "$line\n";
- 
-
 
     #trocas da lista de pares irregulares $l:
     my $i;
@@ -716,6 +714,8 @@ while ($line = <>) {
       $p =~ s/^([pP])lug-ín/$1lug-in/i;
       $p =~ s/^([fF])unctíon/$1unction/i;
       $p =~ s/^([aA])rraches/$1rrastre/i;
+      $p =~ s/^([óÓ])rgao/$1rgano/i; 
+      $p =~ s/bolución/volución/i;
    ##reíntroduzir
       $p =~ s/^([Rr])eín/$1ein/i;
       $p =~ s/^([qQ])ueiron/$1ueiran/i;
