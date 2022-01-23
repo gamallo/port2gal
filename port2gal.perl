@@ -92,8 +92,12 @@ Cenário(s?) Escenário
 ([fF])aculdade(s?) acultade
 ([fF])ormatação ormato
 ([fF])ormatações ormatos
+([fF]r)ut([ao])(s?) oit
+([cC]h)uva(s?) oiva
+([lL])uta(s?) oita
 item(s?) elemento
 Item(s?) Elemento
+([oO])xig[êé]nio(s?) síxeno
 ([tT])u i
 ((?:d|n|d?aqu)?)ele el
 ([vV])ocê(s?) ostede
@@ -121,6 +125,7 @@ Hierarquia(s?) Xerarquia
 hierárquico(s?) xerárquico
 Hierárquico(s?) Xerárquico
 ([mM])uçulmano(s?) usulmán
+([mM])uçulmana(s?) usulmá
 ([pP])ont(o?|os?|u?)- unt
 ([pP])ropriedade(s?) ropiedade
 ([pP])rópri- rópi
@@ -149,6 +154,7 @@ Sob Baixo
 ?(ór)([bpdtkvgfcçzkjxslmnr])ão(s?) ao
 ((?:[cCdDhHmMpPtTvV])?)ão(s?) an
 ((?:[cCdDhHmMpPtTvV])?)ães ans
+([cC]h)ão(s?) an
 ([nsNS])ão on
 ([tT])ambém amén
 ([aA])ssim s
@@ -340,6 +346,8 @@ Questi?- Cuesti
 -([çs])ões ións
 -õe(s?) ón
 -ães áns
+-([j])ão(s?) ón
+-(ch)ão(s?) ón
 -rrão rrón
 -rão rán
 -ão(s?) án
