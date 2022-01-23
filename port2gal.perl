@@ -713,7 +713,8 @@ while ($line = <>) {
       $p =~ s/^([pP])lug-ín/$1lug-in/i;
       $p =~ s/^([fF])unctíon/$1unction/i;
       $p =~ s/^([aA])rraches/$1rrastre/i;
-      $p =~ s/^([óÓ])rgao/$1rgano/i; 
+      $p =~ s/^([óÓ])rgao/$1rgano/i;
+      $p =~ s/^([pP])oída/$1oida/i;
       $p =~ s/bolución/volución/i;
    ##reíntroduzir
       $p =~ s/^([Rr])eín/$1ein/i;
