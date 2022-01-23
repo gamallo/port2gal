@@ -120,8 +120,6 @@ hierarquia(s?) xerarquia
 Hierarquia(s?) Xerarquia
 hierárquico(s?) xerárquico
 Hierárquico(s?) Xerárquico
-mas mais
-Mas Mais
 ([mM])uçulmano(s?) usulmán
 ([pP])ont(o?|os?|u?)- unt
 ([pP])ropriedade(s?) ropiedade
@@ -142,6 +140,7 @@ Sob Baixo
 ([tT])rês res
 ([dD])epois espois
 ([mM])ais áis
+([mM])as ais
 ([mM])eio édio
 ([nN])ível ivel
 ([mM])ui oi
