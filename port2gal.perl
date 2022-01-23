@@ -265,7 +265,7 @@ odei((?:o-|a(s?)-|am-)?) ódi
 ((?:[dD]|[bB]end|[cC]ond|[cC]ontrad|[pP]re|[mM]ald|[dD]esd))ize- ici
 ([eE])scut- scoit
 ([pP])ergunt- regunt
-([dD])iss((?:e|este|emo(s?)|eram|éreis|ésseis|esse(m|s?)|éssemo(s?)|era(m|s?)|éramo(s?))?)((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ix
+([dD])iss((?:e|este|emo(s?)|eram|éreis|ésseis|esse(m|s?)|éssemo(s?)|era(m|s?)|éramo(s?))?)((?:-m[eoa]?(s?)|-lh[eoa]?(s?)|-t[e]?(s?)|-ch[eoa]?(s?)|-v[o]?(s?)|-n[o]?(s?)|-s|(s?)-o(s?)|-a(s?))?) ix
 ([dD])ixe((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ixo
 ((?:[qQ]|[rR]eq))uer((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) uere
 ((?:[qQ]|[rR]eq))uis((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) uixo
