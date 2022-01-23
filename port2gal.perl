@@ -127,7 +127,7 @@ Hierárquico(s?) Xerárquico
 pasta cartafol
 pastas cartafoles
 Pasta Cartafol
-Pasta Cartafoles
+Pastas Cartafoles
 ([pP])aine(l|is) ane
 qualquer calquera
 quaisquer calquera
@@ -148,6 +148,7 @@ Sob Baixo
 ([pP])essoa([ls]?|is?) ersoa
 ?(ór)([bpdtkvgfcçzkjxslmnr])ão(s?) ao
 ((?:[cCdDhHmMpPtTvV])?)ão(s?) an
+((?:[cCdDhHmMpPtTvV])?)ães ans
 ([nsNS])ão on
 ([tT])ambém amén
 ([aA])ssim s
@@ -341,9 +342,8 @@ Questi?- Cuesti
 -ães áns
 -rrão rrón
 -rão rán
---ão -án
--ão ón
--ã(s?) án
+-ão(s?) án
+-ã(s?) á
 -eio(s?) eo
 -eia(s?) ea
 -eia(m?) ea
