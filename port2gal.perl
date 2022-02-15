@@ -50,16 +50,21 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 ([aA])té ta
 ([aA])li lí
 ([aA])i í
+([aA])dvogad- vogad
 [aA]çúcar zucre
+([aA])ssassínio sasinato
+([aA])ssassi- sasi
+([aA]nali)s- z
 ([bB]isa|[aA])vô(s?) bó
 ([bB]isa|[aA])vó(s?) boa
+([aA]ce)it- pt
 Adiciona(r|[aáãeéeíoóuú])- Engadi
 adiciona(r|[aáãeéeíoóuú])- engadi
 Adicion(a|[ms]) Engade
 adiciona(a|[ms]) engade
-apresent- present
 Apresent- Present
-([aA])rrast([aáãeéeíoóuú])- rrastr 
+apresent- present
+([aA])rrast([aáãeéeíoóuú])- rrastr
 ([aA])ssim sí
 ([oO])bjet- bject
 ((?:[rR]e|[dD]es)?)([aA])to(s?) cto
@@ -69,19 +74,30 @@ Apresent- Present
 ((?:[rR]e|[dD]es)?)([aA])tua(l|i|idade)(s?) ctua
 ((?:[rR]e|[dD])?)([eE])strutur- structur
 ((?:[aA]uto|[rR]e|[dD]es)?)([cC])arreg- arg
+([pP]ro)v- b
+((?:[dD]es)?)([aA]pro)v- b
+([rR]ec)ebe([sm]?) ibe
+([rR]ec)eb[ée]- ibi
+([rR]ec)eb- ib
 ecrã(s?) pantalla
 Ecrã(s?) Pantalla
+([eE]le)i(ç)- c
 ([fF])undo(s?) ondo
-frango(s?) polo
 Frango(s?) Polo
+frango(s?) polo
 ([hH])omem ome
 ([oO])ntem nte
-já xa
+Mãe(s?) Nai
+mãe(s?) nai
 Já Xa
-cena(s?) escena
+já xa
+([oO])ntem nte
 Cena(s?) Escena
-cenário(s?) escenário
+cena(s?) escena
 Cenário(s?) Escenário
+cenário(s?) escenário
+([oO]rd)em e
+([oO]rd)ens es
 ([cC])oluna(s?) olumna
 ([cC])ristão(s?) ristián
 ([cC])ristã(s?) ristiá
@@ -95,8 +111,8 @@ Cenário(s?) Escenário
 ([fF]r)ut([ao])(s?) oit
 ([cC]h)uva(s?) oiva
 ([lL])uta(s?) oita
-item(s?) elemento
 Item(s?) Elemento
+item(s?) elemento
 ([oO])xig[êé]nio(s?) síxeno
 ([tT])u i
 ((?:d|n|d?aqu)?)ele el
@@ -115,33 +131,34 @@ Item(s?) Elemento
 ([cC])onteúdo(s?) ontido
 ([cC])ontrole(s?) ontrol
 ([dD])ireit- ereit
-fech- pech
 Fech- Pech
+fech- pech
 ([gG])uard- ard
 ([gG])rau(s?)- rao
 ([hHjJ]o[mv])ens es
-hierarquia(s?) xerarquia
-Hierarquia(s?) Xerarquia
-hierárquico(s?) xerárquico
+Hierarqui- Xerarqui
+hierarqui- xerarqui
 Hierárquico(s?) Xerárquico
+hierárquico(s?) xerárquico
 ([mM])uçulmano(s?) usulmán
 ([mM])uçulmana(s?) usulmá
 ([pP])ont(o?|os?|u?)- unt
 ([pP])ropriedade(s?) ropiedade
 ([pP])rópri- rópi
-pasta cartafol
-pastas cartafoles
+([aA]p)ropri- ropi
 Pasta Cartafol
 Pastas Cartafoles
+pasta cartafol
+pastas cartafoles
 ([pP])aine(l|is) ane
-qualquer calquera
-quaisquer calquera
 Qualquer Calquera
 Quaisquer Calquera
+qualquer calquera
+quaisquer calquera
 Quase Case
 quase case
-sob baixo
 Sob Baixo
+sob baixo
 ([tT])rês res
 ([dD])epois espois
 ([mM])ais áis
@@ -159,8 +176,8 @@ Sob Baixo
 ([tT])ambém amén
 ([aA])ssim s
 ([eEoO])xig([ei)- six
-enquanto mentres
 Enquanto Mentres
+enquanto mentres
 ([cC]re)sc- c
 ([nN]a)sc- c
 ([cC]orr|[eE]l)e([gj])- i
@@ -317,20 +334,23 @@ Espe((?:s|m)?)((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-v
 ([cC])oisa(s?) ousa
 ([mM])au(s?) alo
 ([mM])á(s?) ala
-relatório(s?) informe
 Relatório(s?) Informe 
+relatório(s?) informe
 ([rR])epto(s?) eto 
 ([tT])abela(s?) áboa 
 ([sS])om(a|ar|a-) um
 ([uU])tente(s?) suário
-qua- ca
+([jJ])uiz(es|a|as?) uíz
 Qua- Ca
-quo- co
+qua- ca
 Quo- Co
-gest- xesti
+quo- co
+([gG]est)ão ón
 Gest- Xesti
-questi?- cuesti
+gest- xesti
+([qQ]uest)ão ión
 Questi?- Cuesti
+questi?- cuesti
 ([fF])requ(ên|en)- recu
 ([gG])ov- ob
 ([hH]a|[dD]e)v- b
@@ -421,7 +441,7 @@ while ($line = <>) {
     my $i;
     for ($i=0;$i<$#l;$i+=2) {
       my ($a,$b) = ($l[$i],$l[$i+1]);
-     # print STDERR "$a $b\n";
+      #print STDERR "$a $b\n";
      #$a =~ s/^([^\?-])/(\\W)$1/;
      #$a =~ s/([^\?-])$/$1(\\W)/;
       $a =~ s/^([^\?-])/$NaoChar$1/;
@@ -432,7 +452,7 @@ while ($line = <>) {
       $a =~ s/(^\?|\?$)/(.)/gi;
       $a =~ s/\)\(//gi;
       #print STDERR "$a $b\n";
-      $line =~ s/$a/$1$b$2/gi;
+      $line =~ s/$a/$1$b$2/g;
       
 
       #print STDERR "$line\n";
@@ -729,6 +749,8 @@ while ($line = <>) {
       $p =~ s/^([qQ])ueiron/$1ueiran/i;
       $p =~ s/^([fF])iron/$1iran/i;
       $p =~ s/^([sS])orrín/$1orrí/i;
+      $p =~ s/^([sS])entencía/$1entencia/i;
+      $p =~ s/^([cC])oíncid/$1oicind/i; 
 
 
    ## problemas sintaticos : eu quixo ; son paulo....
