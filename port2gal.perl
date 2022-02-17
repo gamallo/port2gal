@@ -360,6 +360,7 @@ questi?- cuesti
 ?([bBdDtTpPkKvVfFcCçÇzZkKlLrRnNmMjJxXsShH])([aeou])i([lrnm])([bpdtkvgfcçzkjxs])- í
 -([aeou])id([oa])(s?) íd
 ?([AaEeOoIi])u([lrnm])([bpdtkvgfcçzkjxs])- ú
+?([uU]ni)ão ón
 -(u)ição ción
 -(u)ições cións
 -([çs])ão ión
@@ -744,13 +745,14 @@ while ($line = <>) {
       $p =~ s/^([óÓ])rgao/$1rgano/i;
       $p =~ s/^([pP])oída/$1oida/i;
       $p =~ s/bolución/volución/i;
-   ##reíntroduzir
+   ##reíntrodr
       $p =~ s/^([Rr])eín/$1ein/i;
       $p =~ s/^([qQ])ueiron/$1ueiran/i;
       $p =~ s/^([fF])iron/$1iran/i;
       $p =~ s/^([sS])orrín/$1orrí/i;
       $p =~ s/^([sS])entencía/$1entencia/i;
-      $p =~ s/^([cC])oíncid/$1oicind/i; 
+      $p =~ s/^([cC])oíncid/$1oicind/i;
+       
 
 
    ## problemas sintaticos : eu quixo ; son paulo....
