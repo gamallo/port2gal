@@ -130,7 +130,9 @@ item(s?) elemento
 ([nN])em in
 ([cC])onteúdo(s?) ontido
 ([cC])ontrole(s?) ontrol
+([qQ])uais ales
 ([dD])ireit- ereit
+([rR]e?)([eE])leit([oa])(s?) lect
 Fech- Pech
 fech- pech
 ([gG])uard- ard
@@ -140,6 +142,7 @@ Hierarqui- Xerarqui
 hierarqui- xerarqui
 Hierárquico(s?) Xerárquico
 hierárquico(s?) xerárquico
+([jJ])ovem ove
 ([mM])uçulmano(s?) usulmán
 ([mM])uçulmana(s?) usulmá
 ([pP])ont(o?|os?|u?)- unt
@@ -326,6 +329,7 @@ odei((?:o-|a(s?)-|am-)?) ódi
 ((?:[aA]d|[aA]dv|[dD]iv|[cC]onf|[dD]if|[iI]nf|[pP]ref|[pP]rof|[rR]ef|[tT]ransf|[cC]omp|[rR]ep|[cC]onc|[dD]isc|[dD]ig|[iI]ng|[sS]ug|[iI]ns|[rR]efl|[mM]|[pP]|[vV]|[iI]nv|[rR]ev|[rR]equ))e((?:re|rte|te|cte|ste|rne|de))((?:s|m)?)((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) i
 espe((?:s|m)?)((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) ispe
 Espe((?:s|m)?)((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) Ispe
+?([cC]onstit)ui([sm]?) úe
 ?([lL])ingue(s?) ingüe
 ?([lL])inguis- ingüis
 ?([lL])inguís- ingüís
@@ -361,6 +365,7 @@ questi?- cuesti
 -([aeou])id([oa])(s?) íd
 ?([AaEeOoIi])u([lrnm])([bpdtkvgfcçzkjxs])- ú
 ?([uU]ni)ão ón
+([rR]az)ão ón
 -(u)ição ción
 -(u)ições cións
 -([çs])ão ión
