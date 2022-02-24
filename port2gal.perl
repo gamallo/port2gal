@@ -748,6 +748,7 @@ while ($line = <>) {
       $p =~ s/^([fF])unctíon/$1unction/i;
       $p =~ s/^([aA])rraches/$1rrastre/i;
       $p =~ s/^([óÓ])rgao/$1rgano/i;
+      $p =~ s/^Órgán(s?)/Órgano$1/i;
       $p =~ s/^([pP])oída/$1oida/i;
       $p =~ s/bolución/volución/i;
    ##reíntrodr
