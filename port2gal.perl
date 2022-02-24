@@ -365,6 +365,7 @@ questi?- cuesti
 -([aeou])id([oa])(s?) íd
 ?([AaEeOoIi])u([lrnm])([bpdtkvgfcçzkjxs])- ú
 ?([uU]ni)ão ón
+([oO]pini)ão ón
 ([rR]az)ão ón
 -(u)ição ción
 -(u)ições cións
