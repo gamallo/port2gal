@@ -116,6 +116,7 @@ item(s?) elemento
 ([oO])xig[êé]nio(s?) síxeno
 ([tT])u i
 ((?:d|n|d?aqu)?)ele el
+Ele El
 ([vV])ocê(s?) ostede
 ([pP])el([oa]s?) ol
 ((?:sobre)?)tudo(s?) todo
@@ -291,7 +292,7 @@ odei((?:o-|a(s?)-|am-)?) ódi
 ((?:[dD]|[bB]end|[cC]ond|[cC]ontrad|[pP]re|[mM]ald|[dD]esd))ize- ici
 ([eE])scut- scoit
 ([pP])ergunt- regunt
-([dD])iss((?:e|este|emo(s?)|eram|éreis|ésseis|esse(m|s?)|éssemo(s?)|era(m|s?)|éramo(s?))?)((?:-m[eoa]?(s?)|-lh[eoa]?(s?)|-t[e]?(s?)|-ch[eoa]?(s?)|-v[o]?(s?)|-n[o]?(s?)|-s|(s?)-o(s?)|-a(s?))?) ix
+([dD])iss((?:e|este|emo(s?)|eram|éreis|ésseis|esse(m|s?)|éssemo(s?)|era(m|s?)|éramo(s?))?)((?:-m[eoa]?(s?)|-lh[eoa]?(s?)|-t[e]?(s?)|-ch[eoa]?(s?)|-v[o]?(s?)|-n[o]?(s?)|-se|(s?)-o(s?)|-a(s?))?) ix
 ([dD])ixe((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ixo
 ((?:[qQ]|[rR]eq))uer((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) uere
 ((?:[qQ]|[rR]eq))uis((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) uixo
@@ -302,7 +303,7 @@ odei((?:o-|a(s?)-|am-)?) ódi
 ([tT])razi- raí
 ([tT])rag((?:o|a|as|amos|am|ais)?)((?:-m|-lh|-t|-ch|-v|-n|-o|-a)?([eoa]?(s?))) rai
 ([tT])rouxe((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) rouxem
-((?:[tT]roux|[pP]ux))este((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) eches
+((?:[tT]roux|[pP]ux|[dD]ix))este((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) eches
 ([fF])azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) an
 ([fF])azes((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) as
 ((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) án
@@ -367,6 +368,7 @@ questi?- cuesti
 ?([uU]ni)ão ón
 ([oO]pini)ão ón
 ([rR]az)ão ón
+([lL]adr|[mM]ilh)ão ón
 -(u)ição ción
 -(u)ições cións
 -([çs])ão ión
@@ -741,24 +743,26 @@ while ($line = <>) {
       $p =~ s/^([cC])ontrache/$1ontraste/i;
       $p =~ s/^([nNdDlL])iches$/$1este/i;
       $p =~ s/^([eE])xiches$/$1xiste/i;
-      $p =~ s/^([lL])inúx/$1inux/i;
-      $p =~ s/^([xX])aba/Java/i;
-      $p =~ s/^([mM])aíl/$1ail/i;
-      $p =~ s/^([cC])orpús/$1orpus/i;
-      $p =~ s/^([pP])lug-ín/$1lug-in/i;
-      $p =~ s/^([fF])unctíon/$1unction/i;
-      $p =~ s/^([aA])rraches/$1rrastre/i;
+      $p =~ s/^([lL])inúx$/$1inux/i;
+      $p =~ s/^([xX])aba$/Java/i;
+      $p =~ s/^([mM])aíl$/$1ail/i;
+      $p =~ s/^([cC])orpús$/$1orpus/i;
+      $p =~ s/^([pP])lug-ín$/$1lug-in/i;
+      $p =~ s/^([fF])unctíon$/$1unction/i;
+      $p =~ s/^([aA])rraches$/$1rrastre/i;
       $p =~ s/^([óÓ])rgao/$1rgano/i;
       $p =~ s/^Órgán(s?)/Órgano$1/i;
       $p =~ s/^([pP])oída/$1oida/i;
-      $p =~ s/bolución/volución/i;
+      $p =~ s/bolución$/volución/i;
    ##reíntrodr
-      $p =~ s/^([Rr])eín/$1ein/i;
-      $p =~ s/^([qQ])ueiron/$1ueiran/i;
-      $p =~ s/^([fF])iron/$1iran/i;
-      $p =~ s/^([sS])orrín/$1orrí/i;
-      $p =~ s/^([sS])entencía/$1entencia/i;
+      $p =~ s/^([Rr])eín$/$1ein/i;
+      $p =~ s/^([qQ])ueiron$/$1ueiran/i;
+      $p =~ s/^([fF])iron$/$1iran/i;
+      $p =~ s/^([sS])orrín$/$1orrí/i;
+      $p =~ s/^([sS])entencía$/$1entencia/i;
+      $p =~ s/^([hH])oube$/$1oubo/i;
       $p =~ s/^([cC])oíncid/$1oicind/i;
+       
        
 
 
