@@ -763,6 +763,7 @@ while ($line = <>) {
       $p =~ s/^([hH])oube$/$1oubo/i;
       $p =~ s/^([cC])oíncid/$1oicind/i;
       $p =~ s/^([aA])lemento(s?)/$1limento$2/i;
+      $p =~ s/^([eE])xperemento(s?)/$1xperimento$2/i;
        
        
 
