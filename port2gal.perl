@@ -762,11 +762,18 @@ while ($line = <>) {
       $p =~ s/^([sS])entencía$/$1entencia/i;
       $p =~ s/^([hH])oube$/$1oubo/i;
       $p =~ s/^([cC])oíncid/$1oicind/i;
+      $p =~ s/^([pP])iche/$1este/i;
+      $p =~ s/^([pP])istes/$1estes/i;
       $p =~ s/^([aA])lemento(s?)/$1limento$2/i;
+      $p =~ s/^([cC])ondemento(s?)/$1ondimento$2/i;
+      $p =~ s/^([dD])etremento(s?)/$1etrimento$2/i;
       $p =~ s/^([eE])xperemento(s?)/$1xperimento$2/i;
-       
-       
-
+      $p =~ s/^([iI]mpedemento)(s?)/$1mpedimento$2/i;
+      $p =~ s/^([pP])avemento(s?)/$1avimento$2/i; 
+      $p =~ s/^([pPsS])edemento(s?)/$1edimento$2/i;
+      $p =~ s/^([pP])ulemento(s?)/$1ulimento$2/i;
+      $p =~ s/^([rR])udemento(s?)/$1udimento$2/i;       
+     
 
    ## problemas sintaticos : eu quixo ; son paulo....
 
