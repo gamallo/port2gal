@@ -430,6 +430,21 @@ my $line;
 while ($line = <>) {
     chomp $line;
     ##First Part
+    my $line_orig = $line;
+
+   (my @line) = split (" ", $line);
+   my $i=0;
+   my @oov=();
+   foreach my $tok (@line) {
+       if ($tok =~ /^\*/) {
+	    $tok =~ s/^\*//;
+	    @oov[$i] = $tok;
+	    $i++;
+	}
+   }
+   for (my $oov=0;$oov<=$#oov;$oov++) {
+    $line = $oov[$oov];
+    #print STDERR "--$line --  $oov[$oov]\n";
     $line = " $line ";
     $line =~ s/ /  /g;
     $line =~ s/\. / \. /g;
@@ -805,9 +820,12 @@ my $SpecialChar = "\?\!\¿\¡\%\&\/\(\)\\\+\*\'\=\.\,\;\:";
  #$line =~ s/\" ([$w ]+) \"/\"$1\"/g;
     $line =~ s/ ([\]\)\"])([\W])/$1$2/g;
 
-   ##Second Part
+ 
+    ##Final Part:   
+    $line_orig =~ s/\*$oov[$oov]/$line/g;
     
-    print "$line\n";
+   }
+   print "$line_orig\n"; 
 }
 
 
