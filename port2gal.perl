@@ -52,7 +52,7 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 ([aA])i í
 ([aA])dvogad- vogad
 [aA]çúcar zucre
-([aA])ssassínio sasinato
+([aA])ssassínio(s?) sasinato
 ([aA])ssassi- sasi
 ([aA]nali)s- z
 ([bB]isa|[aA])vô(s?) bó
