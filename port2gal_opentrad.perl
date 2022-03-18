@@ -436,7 +436,7 @@ my $i=0;
 my @oov=();
 foreach my $tok (@line) {
   if ($tok =~ /^\*/) {
-    $tok =~ s/^\*//;
+    $tok =~ s/\*//g;
     @oov[$i] = $tok;
     $i++;
   }
