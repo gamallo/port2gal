@@ -823,6 +823,7 @@ my $SpecialChar = "\?\!\¿\¡\%\&\/\(\)\\\+\*\'\=\.\,\;\:";
    ##Second Part
 $line_orig =~ s/\*$oov[$oov]/$line/g;
 }
+$line_orig  =~ s/  / /g;
 print "$line_orig\n";
     
 }

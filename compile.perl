@@ -29,6 +29,7 @@ while ($line = <STDIN>) {
 	print "\$line_orig =~ s/\\*\$oov[\$oov]/\$line/g;\n";
     
         print "}\n";
+	print "\$line_orig  =~ s\/  / /g;\n";
         print "print \"\$line_orig\\n\";\n";
     }
     elsif ($line =~ /print \"\$line\\n\"/) {next}
