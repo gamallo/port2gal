@@ -429,20 +429,6 @@ pós-- post
 my $line;
 while ($line = <>) {
     chomp $line;
-    ##First Part
- my $line_orig = $line;
-(my @line) = split (" ", $line);
-my $i=0;
-my @oov=();
-foreach my $tok (@line) {
-  if ($tok =~ /^\*/) {
-    $tok =~ s/\*//g;
-    @oov[$i] = $tok;
-    $i++;
-  }
- }
-for (my $oov=0;$oov<=$#oov;$oov++) {
-$line = $oov[$oov];
     $line = " $line ";
     $line =~ s/ /  /g;
     $line =~ s/\. / \. /g;
@@ -456,7 +442,23 @@ $line = $oov[$oov];
     $line =~ s/\(/\( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
-    
+
+    ##First Part
+ my $line_orig = $line;
+(my @line) = split (" ", $line);
+my $i=0;
+my @oov=();
+foreach my $tok (@line) {
+  if ($tok =~ /^\*/) {
+    $tok =~ s/[*]+//g;
+    $tok =~ s/^\*//;
+    @oov[$i] = $tok;
+    $i++;
+  }
+ }
+for (my $oov=0;$oov<=$#oov;$oov++) {
+$line = $oov[$oov];
+
     #print STDERR "$line\n";
 
     #trocas da lista de pares irregulares $l:

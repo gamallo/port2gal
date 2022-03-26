@@ -429,7 +429,6 @@ pós-- post
 my $line;
 while ($line = <>) {
     chomp $line;
-    ##First Part
     $line = " $line ";
     $line =~ s/ /  /g;
     $line =~ s/\. / \. /g;
@@ -443,7 +442,9 @@ while ($line = <>) {
     $line =~ s/\(/\( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
-    
+
+    ##First Part
+
     #print STDERR "$line\n";
 
     #trocas da lista de pares irregulares $l:

@@ -15,6 +15,7 @@ while ($line = <STDIN>) {
         print "my \@oov=();\n";
         print "foreach my \$tok (\@line) {\n";
         print "  if (\$tok =~ /^\\*/) {\n";
+	print "    \$tok =~ s/\[\*\]\+//g;\n";
 	print "    \$tok =~ s/^\\*//;\n";
 	print "    \@oov[\$i] = \$tok;\n";
 	print "    \$i++;\n";
