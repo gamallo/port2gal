@@ -437,9 +437,9 @@ while ($line = <>) {
     $line =~ s/\; / \; /g;
     $line =~ s/\?/ \? /g;
     $line =~ s/\!/ \! /g;
-    $line =~ s/\[/\[ /g;
+    $line =~ s/\[/ \[ /g;
     $line =~ s/\]/ \] /g;
-    $line =~ s/\(/\( /g;
+    $line =~ s/\(/ \( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
 
