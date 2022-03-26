@@ -443,7 +443,7 @@ while ($line = <>) {
     $line =~ s/\(/ \( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
-
+    $line =~ s/([\"\{\}\\\/])/ $1 /g;
     ##First Part
 
     #print STDERR "$line\n";
