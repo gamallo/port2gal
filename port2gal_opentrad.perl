@@ -131,7 +131,8 @@ Ele El
 ([nN])em in
 ([cC])onteúdo(s?) ontido
 ([cC])ontrole(s?) ontrol
-([qQ])uais ales
+quais cales
+Quais Cales
 ([dD])ireit- ereit
 ([rR]e?)([eE])leit([oa])(s?) lect
 Fech- Pech
@@ -368,7 +369,7 @@ questi?- cuesti
 ?([uU]ni)ão ón
 ([oO]pini)ão ón
 ([rR]az)ão ón
-([lL]adr|[mM]ilh)ão ón
+([lL]adr|[mM]ilh|[cC]art)ão ón
 -(u)ição ción
 -(u)ições cións
 -([çs])ão ión
@@ -432,6 +433,7 @@ while ($line = <>) {
     $line = " $line ";
     $line =~ s/ /  /g;
     $line =~ s/\. / \. /g;
+    $line =~ s/\.\. \. / \.\.\. /g;
     $line =~ s/\.$/ \. /g;
     $line =~ s/\, / \, /g;
     $line =~ s/\; / \; /g;
@@ -442,7 +444,7 @@ while ($line = <>) {
     $line =~ s/\(/ \( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
-
+    $line =~ s/([\"\{\}\\\/])/ $1 /g;
     ##First Part
  my $line_orig = $line;
 (my @line) = split (" ", $line);
