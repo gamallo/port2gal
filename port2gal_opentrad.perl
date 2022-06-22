@@ -117,6 +117,7 @@ item(s?) elemento
 ([tT])u i
 ((?:d|n|d?aqu)?)ele el
 Ele El
+([sS])ozinh- oíñ
 ([vV])ocê(s?) ostede
 ([pP])el([oa]s?) ol
 ((?:sobre)?)tudo(s?) todo
@@ -369,6 +370,7 @@ questi?- cuesti
 ?([uU]ni)ão ón
 ([oO]pini)ão ón
 ([rR]az)ão ón
+([eE]nt)ão ón
 ([lL]adr|[mM]ilh|[cC]art)ão ón
 -(u)ição ción
 -(u)ições cións
@@ -459,7 +461,7 @@ foreach my $tok (@line) {
   }
  }
 for (my $oov=0;$oov<=$#oov;$oov++) {
-$line = $oov[$oov];
+$line = " $oov[$oov] ";
 
     #print STDERR "$line\n";
 

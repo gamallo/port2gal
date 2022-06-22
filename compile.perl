@@ -22,7 +22,7 @@ while ($line = <STDIN>) {
 	print "  }\n";
 	print " }\n";
 	print "for (my \$oov=0;\$oov<=\$#oov;\$oov++) {\n";
-	print "\$line = \$oov[\$oov];\n";
+	print "\$line = \" \$oov[\$oov] \";\n";
     }
     elsif ($line =~ /Second Part/) {
 	print $line;
