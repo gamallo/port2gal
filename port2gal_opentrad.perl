@@ -706,7 +706,7 @@ $line = " $oov[$oov] ";
 
 
 	      elsif  ( ($raiz =~ /$vogalacentuada([ns]?)$/) && ($raiz !~ /^é|^dá([ns]?)$/i) ) {
-                   ($first, $v, $last) = ($raiz =~ /([$w]*)($vogalacentuada)([ns]?)$/i);
+                   (my $first, $v, $last) = ($raiz =~ /([$w]*)($vogalacentuada)([ns]?)$/i);
                    if ($v ne "")  {
 		       $v = TirarAcento($v);
                        $p = $first . $v . $last . $des;
