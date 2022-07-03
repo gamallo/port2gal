@@ -1,4 +1,7 @@
 #!/usr/bin/perl -w
+binmode STDIN, ':utf8';
+binmode STDOUT, ':utf8';
+use utf8;
 
 $file = shift(@ARGV);
 open (FILE, $file) or die "O ficheiro n�o pode ser aberto: $!\n";
@@ -27,7 +30,7 @@ while ($line = <STDIN>) {
        if ($tok =~ /^\*/) {
 	   $tok =~ s/[$symb]+//g;
            $tok =~ s/^[$symb]//;
-	   $line =~ s/\*$tok/$Dico{$tok}/g;
+	   $line =~ s/\*$tok/$Dico{$tok}/g if ($Dico{$tok});
        }
    }
    $line =~ s/\*//g;
