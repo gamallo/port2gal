@@ -3,7 +3,7 @@
 $file = shift(@ARGV);
 open (FILE, $file) or die "O ficheiro n�o pode ser aberto: $!\n";
 
-$symb = "\*\+\'\"\#\(\)\\[\\]\¨\{\}";
+$symb = "\*\+\?\¿\!\¡\'\"\#\(\)\\[\\]\¨\{\}\\\\";
 
 while (my $pair = <FILE>) {
     chomp $pair;
