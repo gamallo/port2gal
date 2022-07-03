@@ -1,1 +1,0 @@
-cat ./x00 |../port2gal.perl > ./translit/0 &

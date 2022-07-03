@@ -1,9 +1,13 @@
 #!/bin/bash
-cat $1 |./tirar-palavras-asteriscos.perl | sort |uniq > __x && sh run_partitions.sh __x && sh juntar.sh && paste __x juntado.txt > __xx && cat $1 |./colocar-palavras-asteriscos.perl __xx > output.txt
+cat $1 |./tirar-palavras-asteriscos.perl | sort |uniq > __x ;
+sh run_partitions.sh __x ;
+sh juntar.sh ;
+paste __x juntado.txt > __xx ;
+cat $1 |./colocar-palavras-asteriscos.perl __xx > output.txt
 
 ##rm -r translit
 #rm x*
 #rm __x*
-#rm __juntado.txt
+#rm juntado.txt
 
 
