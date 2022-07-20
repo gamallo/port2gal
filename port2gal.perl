@@ -777,7 +777,8 @@ while ($line = <>) {
       $p =~ s/^([pP])avemento(s?)/$1avimento$2/i; 
       $p =~ s/^([pPsS])edemento(s?)/$1edimento$2/i;
       $p =~ s/^([pP])ulemento(s?)/$1ulimento$2/i;
-      $p =~ s/^([rR])udemento(s?)/$1udimento$2/i;       
+      $p =~ s/^([rR])udemento(s?)/$1udimento$2/i;
+      $p =~ s/([aA])probeit/$1proveit/i;  
      
 
    ## problemas sintaticos : eu quixo ; son paulo....
