@@ -1,3 +1,7 @@
+grau -> grao
+rota -> ruta
+camarán -> camarón
+cartán -> cartón
 #Ele -> El (só em maiúscula)
 #ladrán
 #opinián
