@@ -1,3 +1,4 @@
+rexián -> rexión
 água -> auga
 sabán -> sabón
 grau -> grao
@@ -5,6 +6,7 @@ rota -> ruta
 camarán -> camarón
 cartán -> cartón
 almozos -> almorzos
+Cartos -> Cuartos
 #Ele -> El (só em maiúscula)
 #ladrán
 #opinián
