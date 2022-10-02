@@ -1,7 +1,10 @@
+água -> auga
+sabán -> sabón
 grau -> grao
 rota -> ruta
 camarán -> camarón
 cartán -> cartón
+almozos -> almorzos
 #Ele -> El (só em maiúscula)
 #ladrán
 #opinián
