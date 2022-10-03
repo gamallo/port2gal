@@ -1,3 +1,4 @@
+patrán -> patrón
 sociñas -> soíñas (sozinhas/os)
 Son -> San (São [A-Z]+)
 rexián -> rexión
