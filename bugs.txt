@@ -1,17 +1,19 @@
-fanos -> facemos
-fixiches -> fixeches
-patrán -> patrón
-sociñas -> soíñas (sozinhas/os)
-Son -> San (São [A-Z]+)
-rexián -> rexión
-água -> auga
-sabán -> sabón
-grau -> grao
-rota -> ruta
-camarán -> camarón
-cartán -> cartón
-almozos -> almorzos
-Cartos -> Cuartos
+#ocasián -> ocasión
+#abelhão -> abellón
+#fanos -> facemos
+#fixiches -> fixeches
+#patrán -> patrón
+#sociñas -> soíñas (sozinhas/os)
+#Son -> San (São [A-Z]+)
+#rexián -> rexión
+#água -> auga
+#sabán -> sabón
+#grau -> grao
+#rota -> ruta
+#camarán -> camarón
+#cartán -> cartón
+#almozos -> almorzos
+#Cartos -> Cuartos
 #Ele -> El (só em maiúscula)
 #ladrán
 #opinián

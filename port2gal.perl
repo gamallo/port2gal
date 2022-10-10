@@ -39,7 +39,9 @@ my $pron = "|me|te|mos|mas|mo|ma|tos|tas|to|ta|che|cho|cha|chas|chos|lo|los|o|os
 #my $sufixV "((?:-m|-lh|-t)?)(e?);
 
 
- my @l = qw(
+my @l = qw(
+água(s?) auga
+Água(s?) Auga
 ([eE])uropeu(s?) uropeo
 ((?:[dD]es)?)([nN])ível ivel
 ((?:[dD]es)?)([nN])íveis iveis
@@ -163,8 +165,22 @@ qualquer calquera
 quaisquer calquera
 Quase Case
 quase case
+Quarto(s) Cuarto
+quarto(s) cuarto     
 Sob Baixo
 sob baixo
+-casião casión
+-artão artón
+-belhão belhón
+-amarão amarón
+-egião egión
+Sabão Xabón
+sabão xabón
+Sabões Xabóns
+sabões xabóns
+-atrão atrón
+([rR])ota(s)? uta  
+([aA])lmoç- lmorz     
 ([tT])rês res
 ([dD])epois espois
 ([mM])ais áis
@@ -184,6 +200,7 @@ sob baixo
 ([eEoO])xig([ei)- six
 Enquanto Mentres
 enquanto mentres
+([gG])rau(s?) rao    
 ([cC]re)sc- c
 ([nN]a)sc- c
 ([cC]orr|[eE]l)e([gj])- i
@@ -221,10 +238,12 @@ enquanto mentres
 ([tT])ens((?:-m|-lh|-t|-ch|-v|-n|-o|-a)?([eoa]?(s?))) es
 ((?:[aA]|[aA]bs|[eE]s|[cC]on|[dD]e|[mM]an|[oO]b)?)téns((?:-m|-lh|-t|-ch|-v|-n|-o|-a)?([eoa]?(s?))) tés
 ((?:[fF]|[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))aç((?:o|a|as|amos|am|ais)?)((?:-m|-lh|-t|-ch|-v|-n|-o|-a)?([eoa]?(s?))) ag
-([fF])azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) an
+?([fF])azemos((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) acemos
+([fF])azem((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) an
 ([fF])azes((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) as
-([fF])azê-lo(s?) acé-lo
-((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) án
+?([fF])azê-lo(s?) acé-lo
+([fF])á-lo(s?) aino    
+((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azem((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) án
 ((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azes((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ás
 ((?:[fF]|[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))aze((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ai
 ((?:[fF]|[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))iz((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ixen
@@ -306,9 +325,9 @@ odei((?:o-|a(s?)-|am-)?) ódi
 ([tT])rag((?:o|a|as|amos|am|ais)?)((?:-m|-lh|-t|-ch|-v|-n|-o|-a)?([eoa]?(s?))) rai
 ([tT])rouxe((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) rouxem
 ((?:[tT]roux|[pP]ux|[dD]ix))este((?:-m[eoa](s?)|-lh[eoa](s?)|-t[eoa](s?)|-ch[eoa](s?)|-vos|-nos|-vo-lo|-no-lo|-se|-o(s?)|-a(s?))?) eches
-([fF])azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) an
+([fF])azem((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) an
 ([fF])azes((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) as
-((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azem((?:-m|-lh|-t|-ch|-v|-n|-s|o|-a)?([eoa]?(s?))) án
+((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azem((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) án
 ((?:[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))azes((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ás
 ((?:[fF]|[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))az((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ai
 ((?:[fF]|[sS]atisf|[lL]iqüef|[dD]esf|[cC]ontraf|[rR]aref|[rR]ef))iz((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) ixen
@@ -415,6 +434,7 @@ questi?- cuesti
 ([nN])eñun ingún
 ([nN])eñuma ingunha
 ((?:[nN]|[dD]|[cC]|[dD]?alg)?)[uU]mh?a(s?) unha
+([Ss])ozinh oíñ
 ([Ss])ão-([\w]+)- om-
 ([Ss])ou-([\w]*)- om-
 ([dDvV])ão-([\w]+)- am-
@@ -492,7 +512,9 @@ while ($line = <>) {
     $line =~ s/ (d|n|pol)(o|um|algum|este|esse|aquel)[ ]+([$w]*)?[ ]+(da)do /$1$2 $3 $4to /gi;
     $line =~ s/ (d|n|pol)(os|uns|alguns|estes|esses|aqueles)[ ]+([$w]*)?[ ]+(da)dos /$1$2 $3 $4tos /gi;
 
-
+    ##Son Paulo -> San Paulo
+    $line =~ s/ Son[ ]+([A-ZÁÉÍÓÚ][$w]+)/ San $1/g;
+    
     #trocas de grafias especiais
     $line =~ y/çàãõâêôûjÇÀÃÕÂÊÔÛJ/záaoáéóúxZÁAOÁÉÓÚX/;
          #print STDERR "temp: $line\n";
@@ -778,8 +800,9 @@ while ($line = <>) {
       $p =~ s/^([pPsS])edemento(s?)/$1edimento$2/i;
       $p =~ s/^([pP])ulemento(s?)/$1ulimento$2/i;
       $p =~ s/^([rR])udemento(s?)/$1udimento$2/i;
-      $p =~ s/([aA])probeit/$1proveit/i;  
-     
+      $p =~ s/([aA])probeit/$1proveit/i;
+      $p =~ s/([fF])ixiches/$1ixeches/i;
+      
 
    ## problemas sintaticos : eu quixo ; son paulo....
 
