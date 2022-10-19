@@ -262,7 +262,7 @@ enquanto mentres
 ((?:[aA]ntev|[pP]rev|[rR]ev|[rR]el|[dD]escr|[eE]ntrev))ê((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) é
 ((?:[vV]|[lL]|[cC]r))êem((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) en
 ((?:[vV]|[lL]|[cC]r))ê((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) e
-((?:[lL]|[cC]r))ei((?:amos|ais)?)((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) e
+((?:[lL]|[cC]r))ei((?:amos|ais))((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) e
 ((?:[vV]|[lL]|[cC]r))i((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) in
 ([dD])êem eam
 ((?:[pP]oss|[eE]vol|[cC]onstr|[dD]estr|[rR]econstr|[aAtrib]|[oO]bstr|[cC]oncl|[dD]istrib|[iI]ncl))uis((?:-m|-lh|-t|-ch|-v|-n|-s|-o|-a)?([eoa]?(s?))) úes
