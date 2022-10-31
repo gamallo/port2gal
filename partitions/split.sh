@@ -5,7 +5,7 @@ i=0
 for  file in $files
 do	
    #echo "cat $file |../port2gal.perl > ./translit/$i" >> run
-   echo "cat $file |../port2gal_opentrad.perl > ./translit/$i" >> run 
+   echo "cat $file |../port2gal_opentrad.perl > ./translit/$i &" >> run 
    i=`expr $i + 1`
 done
 echo "wait" >> run
