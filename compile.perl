@@ -9,6 +9,7 @@ while ($line = <STDIN>) {
     
     if ($line =~ /First Part/) {
 	print $line;
+	print "\$line =~ s/\@/\\*/g;\n";
 	print " my \$line_orig = \$line;\n";
         print "(my \@line) = split (\" \", \$line);\n";
 	print "my \$i=0;\n";

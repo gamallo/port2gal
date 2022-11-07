@@ -466,8 +466,9 @@ while ($line = <>) {
     $line =~ s/\(/ \( /g;
     $line =~ s/\)/ \) /g;
     $line =~ s/\"/ \" /g;
-    $line =~ s/([\"\{\}\\\/])/ $1 /g;
+    $line =~ s/([\"\{\}\\\/\«\»\‘\’]])/ $1 /g;
     ##First Part
+$line =~ s/@/\*/g;
  my $line_orig = $line;
 (my @line) = split (" ", $line);
 my $i=0;
