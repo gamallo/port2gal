@@ -1,4 +1,6 @@
 má, mau -> mala, malo (má e mau são normativos)
+patacão -> patacán
+vulcão -> vulcán
 avião -> avián
 algodão -> algodán
 #le -> lei
